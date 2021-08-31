@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="./jokenpo.css" />
+</head>
+
+<body>
+    <header>Jokenpô</header>
+    <main>
+        <div class="painel jogador">
+            <div class="titulo">Jogador</div>
+
+            <input type="radio" name="jogada" value="pedra" id="pedra" />
+            <label for="pedra"><img src="./img/pedra.png"   alt="Pedra" /> </label>
+
+            <input type="radio" name="jogada" value="papel" id="papel" />
+            <label for="papel"><img src="./img/papel.png"   alt="Papel"  /> </label>
+
+            <input type="radio" name="jogada" value="tesoura" id="tesoura" />
+            <label for="tesoura"><img src="./img/tesoura.png" alt="Tesoura" /></label>
+
+            <button id="jogar">Jogar</button>
+        </div>
+
+        <div class="contra">vs</div>
+
+        <div class="painel computador">
+            <div class="titulo">Computador</div>
+            <img src="./img/pedra.png" alt="Computador" id="jogadaComputador" />
+        </div>
+
+        <div class="resultado" id="resultado">Jogue</div>
+    </main>
+    <footer>
+        <div>Jogador: <span class="pontuacao" id="jogador">0</span></div>
+        <div>Empates: <span class="pontuacao" id="empates">0</span></div>
+        <div>Computador: <span class="pontuacao" id="computador">0</span></div>
+    </footer>
+    <script type="module" src="./jokenpo.js"></script>
+</body>
+
+</html>
